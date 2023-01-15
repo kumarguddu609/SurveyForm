@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Fill out this form to improve us</p>
+  <form id="survey-form">
+    <label id="name-label">Name
+      <input type="text" id="name" required placeholder="Enter your name" /></label>
+    <label id="email-label">Email
+      <input type="email" id="email" required placeholder="Enter your email" /></label>
+    <label id="number-label">Age
+      <input type="number" id="number" required min="13" max="120" placeholder="Enter your Age" /></label>
+    <label id="options">Give rating
+      <select id="dropdown">
+        <option value="">1</option>
+        <option value="1">2</option>
+        <option value="2">3</option>
+        <option value="3">4</option>
+        <option value="4">5</option>
+      </select>
+    </label>
+    <label id="Recommend">Will you Recommend us? </label>
+    <label> <input type="radio" name="radio" class="inline" />Yes </label>
+    <label> <input type="radio" name="radio" class="inline" />No </label>
+    <label id="check-label">What more you want? </label>
+    <label class="container">Front-End<input type="checkbox" value="Front-End" name="front" class="inline1" />
+    </label>
+    <label class="container">Back-End<input type="checkbox" value="Back-End" name="back" class="inline1" />
+    </label>
+    <label class="container">Full-stack<input type="checkbox" value="Full-stack" name="full" class="inline1" />
+    </label>
+    <label class="container">Python projects
+      <input type="checkbox" value="python projects" name="python" class="inline1" /></label>
+    <label id="cc">Additional Comments
+      <textarea rows="5" cols="30" placeholder="Enter your comments..."></textarea>
+    </label>
+    <input type="submit" id="Submit" />
+  </form>
+</body>
+<html>
